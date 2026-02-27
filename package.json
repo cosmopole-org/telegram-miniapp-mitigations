@@ -1,0 +1,17 @@
+{
+  "name": "node-browser-proxy",
+  "version": "1.0.0",
+  "description": "Forward proxy server for browser HTTP/HTTPS/WebSocket traffic with a simple frontend tunnel UI",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "check": "node --check src/server.js && node --check src/security-scan-server.js && node --check src/telegram-bot.js",
+    "start:scan": "node src/security-scan-server.js",
+    "start:bot": "node src/telegram-bot.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "pg": "^8.12.0",
+    "telegraf": "^4.16.3"
+  }
+}
